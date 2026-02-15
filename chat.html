@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat Message</title>
+    <title>Group Chat Messages</title>
     <style>
       * {
         margin: 0;
@@ -229,6 +229,7 @@
       socket.on('conversation', (data) => {
         addMessage(data.message, data.name);
       });
+
       function sendMessage() {
         const Input = document.getElementById('msg');
         const message = Input.value;
